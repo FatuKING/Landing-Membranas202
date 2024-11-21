@@ -2,7 +2,7 @@ export function AboutUs () {
     return (
         <>
         <article className="flex justify-center items-center w-full bg-gray-100 text-black py-20">
-            <section className="flex flex-col gap-4 w-11/12">
+            <section className="flex flex-col gap-4 w-11/12 2xl:w-3/4">
                 <h3 className="text-2xl">
                     Sobre Nosotros
                 </h3>

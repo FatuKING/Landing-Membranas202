@@ -3,27 +3,19 @@ import imgMembrana from '../assets/membrana1.webp'
 export function SliderBar () {
     return (
         <>
-        <article className="w-screen relative">
-        <figure className="w-screen h-96 relative">
-            <img className="w-full h-full object-cover" src={imgMembrana} alt="" />
-            <figcaption className="text-3xl absolute inset-0 flex items-center justify-center bg-black/50 text-white p-2 w-full">
-                Impernabilidad de techos
-            </figcaption>
-        </figure>
-{/* 
-        <figure className="w-screen h-96 relative">
-            <img className="w-full h-full object-cover" src={imgMembrana} alt="" />
-            <figcaption className="absolute bottom-0 bg-black bg-opacity-50 text-white p-2 text-center w-full">
-                Impernabilidad de techos
-            </figcaption>
-        </figure>
+        <article className="w-screen h-[400px] md:h-[600px] relative">
+            <figure className="w-screen h-full absolute">
+                <img className="w-full h-full object-cover" src={imgMembrana} alt="" />
+                <figcaption className="text-5xl absolute inset-0 flex flex-col gap-4 items-center justify-center bg-black/30 text-gray-100 p-2 w-full">
+                    <p className=''>
+                    ¿Necesitas impermeabilizar tu techo?
+                    </p>
 
-        <figure className="w-screen h-96 relative">
-            <img className="w-full h-full object-cover" src={imgMembrana} alt="" />
-            <figcaption className="absolute bottom-0 bg-black bg-opacity-50 text-white p-2 text-center w-full">
-                Impernabilidad de techos
-            </figcaption>
-        </figure>    */}
+                    <p>Te damos la mejor opción. </p>
+
+                    <button className='bg-black p-2 px-4 text-xl rounded'>Contáctanos</button>
+                </figcaption>
+            </figure>
         </article>
         </>
     )

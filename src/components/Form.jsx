@@ -2,14 +2,14 @@ export function Form () {
     return (
         <>
         <article className="flex justify-center w-full py-20">
-            <section className="flex justify-between w-11/12">
-                <form className="flex flex-col gap-4" action="">
-                    <input type="text" placeholder="Nombre completo" />
+            <section className="flex gap-20 w-11/12 2xl:w-3/4">
+                <form className="flex flex-col w-1/3 gap-4" action="">
+                    <input className="p-2" type="text" placeholder="Nombre completo" />
             
 
-                    <input type="text" placeholder="Telefono"/>
+                    <input className="p-2" type="text" placeholder="Telefono"/>
 
-                    <textarea name="" id="" placeholder="Mensaje">
+                    <textarea className="p-2 h-24" name="" id="" placeholder="Mensaje">
 
                     </textarea>
 
@@ -17,9 +17,9 @@ export function Form () {
                 </form>
 
                 <address className="">
-                    <ul>
-                        <li>Email: <a href="mailto:membranas202@gmail.com">membranas202@gmail.com</a></li>
-                        <li>Teléfono: <a href="">+54 9 1140963523</a></li>
+                    <ul className="flex flex-col gap-4 text-xl">
+                        <li className="flex flex-col">Email: <a className="hover:underline" href="mailto:membranas202@gmail.com">membranas202@gmail.com</a></li>
+                        <li className="flex flex-col">Teléfono: <a className="hover:underline" href="">+54 9 1140963523</a></li>
                     </ul>
                 </address>
             </section>
