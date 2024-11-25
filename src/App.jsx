@@ -16,9 +16,9 @@ function App() {
       <Navbar />
       <SliderBar />
       <BtnWhatsApp />
-      <Service />
-      <Banner text='Resistencia y protección, bajo un mismo techo.' />
       <AboutUs />
+      <Banner text='Resistencia y protección, bajo un mismo techo.' />
+      <Service />
       <Form />
 
       <Footer />

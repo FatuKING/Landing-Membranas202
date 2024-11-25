@@ -1,9 +1,15 @@
 import { NavbarToggle } from './NavbarToggle';
 import logoMembranas202 from '/membranas202Logo.png';
 import { motion, useAnimation } from "motion/react";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export function Navbar() {
+  const [activeItem, setActiveItem] = useState("Inicio")
+
+  const handleMenuClick = (item) => {
+    setActiveItem(item)
+  };
+
   const controls = useAnimation();
 
   useEffect(() => {
@@ -13,15 +19,11 @@ export function Navbar() {
       if (scrollY > 0) {
         controls.start({
           height: "60px",
-          backgroundColor: "rgba(0, 0, 0, 0.7)",
-          backdropFilter: "blur(25px)",
           transition: { duration: 0.3 },
         });
       } else {
         controls.start({
           height: "90px",
-          backgroundColor: "rgba(0, 0, 0, 0.9)",
-          backdropFilter: "blur(5px)",
           transition: { duration: 0.3 },
         });
       }
@@ -33,11 +35,11 @@ export function Navbar() {
 
   return (
     <motion.header
-      className="flex justify-center fixed top-0 z-10 w-full"
-      initial={{ height: "90px", backgroundColor: "rgba(0, 0, 0, 0.9)", backdropFilter: "blur(5px)" }}
+      className="flex justify-center fixed top-0 z-10 w-full text-black bg-gray-850 border-b-2 border-b-orange-600"
+      initial={{ height: "90px"}}
       animate={controls}
     >
-      <nav className="flex justify-between items-center w-11/12 2xl:w-3/4 p-2 text-xl">
+      <nav className="flex justify-between items-center w-11/12 2xl:w-3/4 p-2 text-xl text-gray-100">
         <div className="flex justify-center items-center">
           <figure className="w-10 h-10">
             <img className="w-full h-full" src={logoMembranas202} alt="Logo" />
@@ -50,17 +52,17 @@ export function Navbar() {
         <NavbarToggle />
 
         <ul className="hidden lg:flex gap-4">
-          <li className="font-medium hover:text-yellow-300 hover:underline">
-            <a href="">Inicio</a>
+          <li className={`font-semibold itemNav ${activeItem === 'Inicio' ? "active" : ""}`}>
+            <a data-text="Inicio" href="#" onClick={() => handleMenuClick('Inicio')}>Inicio</a>
           </li>
-          <li className="font-medium hover:text-yellow-400 hover:underline">
-            <a href="">Servicios</a>
+          <li className={`font-semibold itemNav ${activeItem === 'Nosotros' ? "active" : ""}`}>
+            <a data-text="Nosotros" href="#nosotros" onClick={() => handleMenuClick('Nosotros')}>Nosotros</a>
           </li>
-          <li className="font-medium hover:text-yellow-300 hover:underline">
-            <a href="">Nosotros</a>
+          <li className={`font-semibold itemNav ${activeItem === 'Servicios' ? "active" : ""}`}>
+            <a data-text="Servicios" href="#servicios" onClick={() => handleMenuClick('Servicios')}>Servicios</a>
           </li>
-          <li className="font-medium hover:text-yellow-300 hover:underline">
-            <a href="">Contacto</a>
+          <li className={`font-semibold itemNav ${activeItem === 'Contacto' ? "active" : ""}`}>
+            <a data-text="Contacto" href="#contacto" onClick={() => handleMenuClick('Contacto')}>Contacto</a>
           </li>
         </ul>
       </nav>
