@@ -7,7 +7,7 @@ export function AboutUs () {
                     Sobre Nosotros
                 </h3>
 
-                <div className="w-11/12 text-lg">
+                <div className="flex flex-col gap-2 w-11/12 text-base md:text-lg">
                 <p className="text-gray-300">
                     En Membranas 202, llevamos más de 30 años ofreciendo soluciones confiables en la venta y colocación de membranas asfálticas. Como empresa familiar, hemos construido nuestra reputación sobre los pilares de la calidad, la dedicación y la confianza.
                 </p>

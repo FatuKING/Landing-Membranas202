@@ -25,7 +25,7 @@ export function Service () {
     return (
         <>
         <article id="servicios" className="flex w-screen justify-center bg-gray-100 text-black pt-20 pb-20">
-            <section className="grid grid-cols-3 gap-4 xl:gap-8 2xl:gap-40 w-11/12 2xl:w-3/4">
+            <section className="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-8 2xl:gap-40 w-11/12 2xl:w-3/4">
                 {dataService.map((service, index) => {
                     return (
                     <Card key={index} icon={service.icon} title={service.title} description={service.description} />

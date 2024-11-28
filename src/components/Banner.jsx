@@ -5,7 +5,7 @@ const listWords = ['Resistencia y protecci√≥n, bajo un mismo techo.', 'Protecci√
 export function Banner () {
     return (
         <>
-        <section className="flex justify-center h-20 items-center w-full text-2xl font-bold p-2 bg-gradient-to-r from-orange-600 to-orange-500 text-oswald">
+        <section className="flex justify-center h-20 items-center w-full text-xl sm:text-2xl font-bold p-2 bg-gradient-to-r from-orange-600 to-orange-500 text-oswald">
            <WordRotate words={listWords} />
         </section>
         </>
