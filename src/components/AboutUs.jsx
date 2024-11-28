@@ -3,11 +3,11 @@ export function AboutUs () {
         <>
         <article id="nosotros" className="flex justify-center items-center w-full bg-gray-850 text-white py-20">
             <section className="flex flex-col gap-4 w-11/12 2xl:w-3/4">
-                <h3 className="text-3xl">
+                <h3 className="text-3xl text-oswald">
                     Sobre Nosotros
                 </h3>
 
-                <div className="w-11/12">
+                <div className="w-11/12 text-lg">
                 <p className="text-gray-300">
                     En Membranas 202, llevamos más de 30 años ofreciendo soluciones confiables en la venta y colocación de membranas asfálticas. Como empresa familiar, hemos construido nuestra reputación sobre los pilares de la calidad, la dedicación y la confianza.
                 </p>

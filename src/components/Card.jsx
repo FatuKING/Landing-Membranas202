@@ -1,16 +1,16 @@
 export function Card ({icon, title, description}) {
     return (
         <>
-        <div className="flex flex-col items-center gap-4 border border-black rounded-lg shadow-sm shadow-black p-4 hover:scale-105">
-            <div className="flex justify-center items-center polygon bg-orange-500 text-black text-4xl font-semibold shadow-xl shadow-black">
+        <div className="group flex flex-col gap-4 border-2 border-black rounded-2xl shadow-sm shadow-black p-6 hover:scale-105 hover:bg-orange-400 transition duration-300">
+            <div className="flex text-5xl font-semibold group-hover:scale-105 transition duration-1000 ">
                 {icon}
             </div>
 
-            <h3 className="font-semibold text-2xl">
+            <h3 data-text={title} className="font-semibold text-2xl text-oswald">
                 {title}
             </h3>
 
-            <p className="w-11/12 text-lg text-gray-700">{description}</p>
+            <p className="w-11/12 text-lg font-medium text-gray-700">{description}</p>
         </div>
         </>
     )

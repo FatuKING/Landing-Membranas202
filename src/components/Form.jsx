@@ -16,14 +16,14 @@ export function Form () {
 
                     </textarea>
 
-                    <button className="bg-orange-600 p-2 px-4 text-xl rounded">Enviar formulario</button>
+                    <button className="bg-orange-500 p-2 px-4 text-xl rounded hover:bg-orange-600">Enviar formulario</button>
                 </form>
 
                 <address className="">
                     <ul className="flex flex-col gap-4 text-xl">
                         <li className="flex items-center gap-2"><FaLocationArrow /> <a className="hover:underline" href="mailto:membranas202@gmail.com">Regina Pacini de alvear 2039 - Don Torcuato</a></li>
-                        <li className="flex items-center gap-2"><IoMdMail /> <a className="hover:underline" href="mailto:membranas202@gmail.com">membranas202@gmail.com</a></li>
-                        <li className="flex items-center gap-2"><FaPhone /> <a className="hover:underline" href="">+54 9 1140963523</a></li>
+                        <li className="flex items-center gap-2"><IoMdMail /> <a className="hover:underline" href="mailto:membranas202@gmail.com">Membranas202@gmail.com</a></li>
+                        <li className="flex items-center gap-2"><FaPhone /> <a className="hover:underline" href="tel:+5491140963523">+54 9 1140963523</a></li>
                     </ul>
                 </address>
             </section>

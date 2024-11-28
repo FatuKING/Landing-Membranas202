@@ -17,7 +17,7 @@ function App() {
       <SliderBar />
       <BtnWhatsApp />
       <AboutUs />
-      <Banner text='Resistencia y protección, bajo un mismo techo.' />
+      <Banner />
       <Service />
       <Form />
 

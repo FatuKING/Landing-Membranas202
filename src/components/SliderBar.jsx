@@ -10,7 +10,7 @@ export function SliderBar() {
         <article className="w-screen h-[400px] md:h-[600px] relative overflow-hidden">
             <motion.figure
                 className="w-screen h-full absolute"
-                style={{ y }} // Aplica el parallax al eje Y
+                style={{ y }} 
             >
                 <img
                     className="w-full md:h-[700px] lg:h-screen"
@@ -21,10 +21,10 @@ export function SliderBar() {
                     <p>¿Necesitas impermeabilizar tu techo?</p>
                     <p>Te damos la mejor opción.</p>
                     <div className="flex gap-4 mt-4">
-                        <button className="bg-orange-600 text-black p-2 px-4 text-xl rounded hover:bg-orange-600">Contáctanos</button>
-                        <button className="bg-gray-100 text-black p-2 px-4 text-xl rounded hover:">
+                        <a target='_blank' href="https://wa.me/1140963523" className="bg-orange-500 text-black p-2 px-4 text-xl rounded hover:bg-orange-600">Contáctanos</a>
+                        <a href="#nosotros" className="bg-gray-100 text-black p-2 px-4 text-xl rounded hover:bg-gray-200">
                             Saber más
-                        </button>
+                        </a>
                     </div>
                 </figcaption>
             </motion.figure>
