@@ -23,6 +23,6 @@ jobs:
           server: ftp://185.173.111.249
           username: u553004748.membranas202.com.ar # Cambiado de ftp-username a username
           password: DeployFTP*2024 # Cambiado de ftp-password a password
-          local-dir: /dist/ # Cambia esto si tu directorio es diferente
-          server-dir: / # Cambiado de remote-dir a server-dir
+          local-dir: ./dist/ # Cambia esto si tu directorio es diferente
+          server-dir: ./ # Cambiado de remote-dir a server-dir
           log-level: verbose # Opcional para ver más detalles
