@@ -18,10 +18,10 @@ jobs:
 
       # Paso 2: Configurar FTP y subir archivos
       - name: Deploy via FTP
-        uses: SamKirkland/FTP-Deploy-Action@v3
+        uses: SamKirkland/FTP-Deploy-Action@4.3.3
         with:
           ftp-server: ftp://185.173.111.249
           ftp-username: ${{ secrets.FTP_USERNAME }}
           ftp-password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: /dist/.
+          local-dir: /dist/
           remote-dir: /public_html  # Ruta en tu servidor FTP
