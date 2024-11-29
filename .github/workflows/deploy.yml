@@ -24,4 +24,4 @@ jobs:
           ftp-username: ${{ secrets.FTP_USERNAME }}
           ftp-password: ${{ secrets.FTP_PASSWORD }}
           local-dir: /dist/
-          remote-dir: /public_html  # Ruta en tu servidor FTP
+          remote-dir: /public_html/  # Ruta en tu servidor FTP
