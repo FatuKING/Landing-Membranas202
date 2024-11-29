@@ -20,7 +20,7 @@ jobs:
       - name: Deploy via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          server: ftp://185.173.111.249
+          server: 185.173.111.249
           username: u553004748.membranas202.com.ar # Cambiado de ftp-username a username
           password: DeployFTP*2024 # Cambiado de ftp-password a password
           local-dir: ./dist/ # Cambia esto si tu directorio es diferente
