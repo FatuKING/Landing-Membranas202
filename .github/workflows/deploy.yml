@@ -25,4 +25,3 @@ jobs:
           ftp-password: ${{ secrets.FTP_PASSWORD }}
           local-dir: /dist/.
           remote-dir: /public_html  # Ruta en tu servidor FTP
-          exclude: .git* 
