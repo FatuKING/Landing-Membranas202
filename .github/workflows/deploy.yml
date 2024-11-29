@@ -20,8 +20,9 @@ jobs:
       - name: Deploy via FTP
         uses: SamKirkland/FTP-Deploy-Action@4.3.3
         with:
-          ftp-server: ftp://185.173.111.249
-          ftp-username: ${{ secrets.FTP_USERNAME }}
-          ftp-password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: /dist/
-          remote-dir: /public_html/  # Ruta en tu servidor FTP
+          server: ftp://185.173.111.249
+          username: ${{ secrets.FTP_USERNAME }} # Cambiado de ftp-username a username
+          password: ${{ secrets.FTP_PASSWORD }} # Cambiado de ftp-password a password
+          local-dir: ./dist/ # Cambia esto si tu directorio es diferente
+          server-dir: /public_html # Cambiado de remote-dir a server-dir
+          log-level: verbose # Opcional para ver más detalles
