@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://www.membranas202.com.ar/sitemap.xml
