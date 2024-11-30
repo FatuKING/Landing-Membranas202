@@ -16,7 +16,12 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      # Paso 2: Configurar FTP y subir archivos
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build the project
+        run: npm run build
+      
       - name: Deploy via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
