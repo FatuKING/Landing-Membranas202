@@ -1,20 +1,20 @@
+import { useForm } from "../hooks/useForm.js";
 import { FaLocationArrow, FaPhone } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 
 export function Form () {
+    const { handleSumit } = useForm()
+
     return (
         <>
         <article className="flex justify-center w-full py-20" id="contacto">
             <section className="flex flex-col-reverse md:flex-row gap-8 md:gap-20 w-11/12 2xl:w-3/4">
-                <form className="flex flex-col w-full sm:w-9/12 md:w-1/2 lg:w-2/5 xl:w-1/3 gap-4 text-black" action="">
-                    <input className="p-2 bg-gray-100 focus:outline-none placeholder:text-gray-900 rounded shadow-md shadow-black" type="text" placeholder="Nombre completo" />
+                <form className="flex flex-col w-full sm:w-9/12 md:w-1/2 lg:w-2/5 xl:w-1/3 gap-4 text-black" action="" onSubmit={handleSumit}>
+                    <input className="p-2 bg-gray-100 focus:outline-none placeholder:text-gray-900 rounded shadow-md shadow-black" type="text" placeholder="Nombre completo" name="nombre" />
             
+                    <input className="p-2 bg-gray-100 focus:outline-none placeholder:text-gray-900 rounded shadow-md shadow-black" type="text" placeholder="Telefono" name="telefono"/>
 
-                    <input className="p-2 bg-gray-100 focus:outline-none placeholder:text-gray-900 rounded shadow-md shadow-black" type="text" placeholder="Telefono"/>
-
-                    <textarea className="p-2 bg-gray-100 h-24 focus:outline-none placeholder:text-gray-900 rounded shadow-md shadow-black" name="" id="" placeholder="Mensaje">
-
-                    </textarea>
+                    <textarea className="p-2 bg-gray-100 h-24 focus:outline-none placeholder:text-gray-900 rounded shadow-md shadow-black" name="mensaje" id="" placeholder="Mensaje" ></textarea>
 
                     <button className="bg-orange-500 p-2 px-4 text-lg lg:text-xl rounded hover:bg-orange-600 shadow-md shadow-black">Enviar formulario</button>
                 </form>
