@@ -6,7 +6,7 @@ export function Card ({icon, title, description}) {
                 {icon}
             </div>
 
-            <h3 data-text={title} className="font-semibold text-xl sm:text-2xl text-oswald">
+            <h3 className="font-semibold text-xl sm:text-2xl text-oswald">
                 {title}
             </h3>
 

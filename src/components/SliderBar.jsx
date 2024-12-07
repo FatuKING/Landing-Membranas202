@@ -17,7 +17,7 @@ export function SliderBar() {
                     alt="Imagen de impermeabilización"
                 />
 
-                <figcaption className="text-xl sm:text-3xl md:text-4xl lg:text-5xl absolute inset-0 flex flex-col gap-4 items-center justify-center bg-black/30 text-gray-100 p-2 w-full h-[500px] md:h-[700px]">
+                <figcaption className="text-xl sm:text-3xl md:text-4xl lg:text-5xl absolute inset-0 flex flex-col gap-2 sm:gap-4 items-center justify-center bg-black/30 text-gray-100 p-2 w-full h-[500px] md:h-[700px]">
                     <p>¿Necesitas impermeabilizar tu techo?</p>
                     <p>Te damos la mejor opción.</p>
                     <div className="flex gap-4 mt-4 text-base sm:text-lg lg:text-xl">

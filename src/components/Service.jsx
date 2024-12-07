@@ -8,7 +8,7 @@ export function Service () {
         {
             icon: <FaRegHandshake />,
             title: 'Presupuesto sin cargo',
-            description: 'Ofrecemos asesoramiento personalizado y presupuestos gratuitos para ayudarte a elegir la mejor solución de impermeabilización según tus necesidades.'
+            description: 'Ofrecemos asesoramiento personalizado y presupuestos gratuitos en obra para ayudarte a elegir la mejor solución de impermeabilización según tus necesidades.'
         },
         {
             icon: <FaTools />,
@@ -18,7 +18,7 @@ export function Service () {
         {
             icon: <MdSecurity />,
             title: 'Garantía extendida',
-            description: 'Brindamos garantía de 10 años en nuestros servicio, ofreciendo tranquilidad y respaldo a largo plazo para tu inversión.'
+            description: 'Brindamos garantía de 10 años en nuestros servicios, ofreciendo tranquilidad y respaldo a largo plazo, junto con un compromiso continuo de atención y soporte personalizado.'
         }
     ]
 

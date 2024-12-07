@@ -1,6 +1,6 @@
 import { WordRotate } from "./WordRotate.jsx"
 
-const listWords = ['Resistencia y protección, bajo un mismo techo.', 'Protección impermeable, calidad garantizada.', 'La mejor calidad al mejor precio.']
+const listWords = ['Presupuesto sin cargo en obra', 'Materiales de primera calidad', '10 años de garantia', 'El mejor precio para tu tranquilidad']
 
 export function Banner () {
     return (
