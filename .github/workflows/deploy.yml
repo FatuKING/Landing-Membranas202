@@ -25,8 +25,8 @@ jobs:
       - name: Deploy via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          server: ${{ secrets.FTP_HOST }}
-          username: ${{ secrets.FTP_USERNAME }} 
+          server: ftp.cozzanifacundo.com
+          username: u553004748.membranas202.com.ar 
           password: MiPassword123!
           local-dir: ./dist/
           server-dir: ./ 
